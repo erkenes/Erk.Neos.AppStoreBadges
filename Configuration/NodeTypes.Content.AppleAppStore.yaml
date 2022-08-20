@@ -1,0 +1,42 @@
+'Erk.Neos.AppStoreBadges:Content.AppleAppStore':
+  ui:
+    label: i18n
+    icon: 'fab fa-app-store'
+    group: 'modules-apps'
+  superTypes:
+    'Erk.Neos.AppStoreBadges:Mixin.AppStoreUri': true
+  properties:
+    storeType:
+      type: string
+      defaultValue: 'ios'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: app
+          position: 20
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              ios:
+                label: i18n
+              mac:
+                label: i18n
+              tv:
+                label: i18n
+    style:
+      type: string
+      defaultValue: 'black'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: app
+          position: 30
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              white:
+                label: i18n
+              black:
+                label: i18n

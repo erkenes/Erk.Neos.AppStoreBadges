@@ -1,0 +1,17 @@
+prototype(Erk.Neos.AppStoreBadges:Content.AppleAppStore) < prototype(Neos.Neos:ContentComponent) {
+    // API
+    appStoreUri = ${q(node).property('appStoreUri')}
+    appStoreUri.@process.convertUris = Neos.Neos:ConvertUris {
+        forceConversion = true
+    }
+    style = ${q(node).property('style')}
+    storeType = ${q(node).property('storeType')}
+
+    renderer = Erk.Neos.AppStoreBadges:Component.Atom.AppleAppStore {
+        inBackend = ${documentNode.context.inBackend}
+        appStoreUri = ${props.appStoreUri}
+        style = ${props.style}
+        storeType = ${props.storeType}
+        language = ${AppStoreBadges.Locale.getCurrentLocale()}
+    }
+}

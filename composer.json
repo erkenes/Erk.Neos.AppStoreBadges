@@ -1,0 +1,19 @@
+{
+    "description": "digital badges for play and app store",
+    "type": "neos-plugin",
+    "name": "erkenes/neos-appstore-badges",
+    "require": {
+        "php": ">=7.0",
+        "neos/neos": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erk\\Neos\\AppStoreBadges\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Erk.Neos.AppStoreBadges"
+        }
+    }
+}

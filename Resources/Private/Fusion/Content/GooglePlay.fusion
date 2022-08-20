@@ -1,0 +1,19 @@
+prototype(Erk.Neos.AppStoreBadges:Content.GooglePlay) < prototype(Neos.Neos:ContentComponent) {
+    // API
+    appStoreUri = ${q(node).property('appStoreUri')}
+    appStoreUri.@process.convertUris = Neos.Neos:ConvertUris {
+        forceConversion = true
+    }
+    utmSource = ${q(node).property('utmSource')}
+    utmCampaign = ${q(node).property('utmCampaign')}
+    campaignId = ${q(node).property('campaignId')}
+
+    renderer = Erk.Neos.AppStoreBadges:Component.Atom.GooglePlay {
+        inBackend = ${documentNode.context.inBackend}
+        appStoreUri = ${props.appStoreUri}
+        utmSource = ${props.utmSource}
+        utmCampaign = ${props.utmCampaign}
+        campaignId = ${props.campaignId}
+        language = ${AppStoreBadges.Locale.getCurrentLocale()}
+    }
+}

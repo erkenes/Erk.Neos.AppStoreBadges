@@ -1,0 +1,20 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'Erk.Neos.AppStoreBadges': true
+    userInterface:
+      translation:
+        autoInclude:
+          'Erk.Neos.AppStoreBadges':
+            - 'NodeTypes/*'
+            - 'Main'
+    nodeTypes:
+      groups:
+        modules-apps:
+          position: 2000
+          label: 'Erk.Neos.AppStoreBadges:Main:groups.modules-apps'
+          collapsed: false
+  Fusion:
+    defaultContext:
+      'AppStoreBadges.Locale': Erk\Neos\AppStoreBadges\Eel\Helper\LocaleHelper

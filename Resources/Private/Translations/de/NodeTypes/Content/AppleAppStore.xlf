@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="Erk.Neos.AppStoreBadges" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve" approved="yes">
+                <source>App Store Badge</source>
+                <target xml:lang="de">App Store Badge</target>
+            </trans-unit>
+
+            <!-- Properties -->
+            <trans-unit id="properties.storeType" xml:space="preserve" approved="yes">
+                <source>Store</source>
+                <target xml:lang="de">Store</target>
+            </trans-unit>
+            <trans-unit id="properties.storeType.selectBoxEditor.values.ios" xml:space="preserve" approved="yes">
+                <source>App Store</source>
+                <target xml:lang="de">App Store</target>
+            </trans-unit>
+            <trans-unit id="properties.storeType.selectBoxEditor.values.mac" xml:space="preserve" approved="yes">
+                <source>Mac App Store</source>
+                <target xml:lang="de">Mac App Store</target>
+            </trans-unit>
+            <trans-unit id="properties.storeType.selectBoxEditor.values.tv" xml:space="preserve" approved="yes">
+                <source>Apple TV</source>
+                <target xml:lang="de">Apple TV</target>
+            </trans-unit>
+
+            <trans-unit id="properties.style" xml:space="preserve" approved="yes">
+                <source>Style</source>
+                <target xml:lang="de">Aussehen</target>
+            </trans-unit>
+            <trans-unit id="properties.style.selectBoxEditor.values.black" xml:space="preserve" approved="yes">
+                <source>Black</source>
+                <target xml:lang="de">Schwarz</target>
+            </trans-unit>
+            <trans-unit id="properties.style.selectBoxEditor.values.white" xml:space="preserve" approved="yes">
+                <source>White</source>
+                <target xml:lang="de">Weiß</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

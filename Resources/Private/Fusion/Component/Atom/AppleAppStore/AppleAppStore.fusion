@@ -1,0 +1,35 @@
+prototype(Erk.Neos.AppStoreBadges:Component.Atom.AppleAppStore) < prototype(Neos.Fusion:Component) {
+    // API
+    inBackend = false
+    appStoreUri = ''
+    language = 'en'
+    style = 'black'
+    storeType = 'io2s'
+
+    // Renderer
+    renderer = Neos.Fusion:Tag {
+        tagName = 'a'
+        tagName.@process.setSpan = 'span'
+        tagName.@process.setSpan.@if.isBackend = ${props.inBackend}
+        attributes {
+            href = ${props.appStoreUri}
+            target = '_blank'
+        }
+        content = Neos.Fusion:Tag {
+            tagName = 'img'
+            attributes {
+                src = 'https://tools.applemediaservices.com/api/badges/download-on-the-app-store/'
+                src.@process.setMacStore = 'https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/'
+                src.@process.setMacStore.@if.isMac = ${props.storeType == 'mac'}
+                src.@process.setTvStore = 'https://tools.applemediaservices.com/api/badges/download-on-apple-tv/'
+                src.@process.setTvStore.@if.isTv = ${props.storeType == 'tv'}
+                src.@process.addStyle = ${value + props.style + '/'}
+                src.@process.addLanguage = ${value + props.language + '-' + props.language}
+                src.@process.addSize = ${value + '?size=250x83'}
+                alt = ${Translation.translate('label', null, [], 'Component/Atom/AppleAppStore', 'Erk.Neos.AppStoreBadges')}
+
+                data-store = ${props.storeType}
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="Erk.Neos.AppStoreBadges" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve" approved="yes">
+                <source>Google Play Badge</source>
+            </trans-unit>
+
+            <!-- Properties -->
+            <trans-unit id="properties.utmSource" xml:space="preserve" approved="yes">
+                <source>UTM Source (optional)</source>
+            </trans-unit>
+            <trans-unit id="properties.utmCampaign" xml:space="preserve" approved="yes">
+                <source>UTM Campaign (optional)</source>
+            </trans-unit>
+            <trans-unit id="properties.campaignId" xml:space="preserve" approved="yes">
+                <source>UTM Campaign-ID (optional)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

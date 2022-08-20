@@ -1,0 +1,37 @@
+prototype(Erk.Neos.AppStoreBadges:Component.Atom.GooglePlay) < prototype(Neos.Fusion:Component) {
+    // API
+    inBackend = false
+    appStoreUri = ''
+    language = 'en'
+    utmSource = null
+    utmCampaign = null
+    campaignId = null
+
+    // Renderer
+    renderer = Neos.Fusion:Tag {
+        tagName = 'a'
+        tagName.@process.setSpan = 'span'
+        tagName.@process.setSpan.@if.isBackend = ${props.inBackend}
+        attributes {
+            href = ${props.appStoreUri}
+            href.@process.setUtmSource = ${value + '&utm_source=' + props.utmSource}
+            href.@process.setUtmSource.@if.isSet = ${props.utmSource}
+            href.@process.setUtmCampaign = ${value + '&utm_campaign=' + props.utmCampaign}
+            href.@process.setUtmCampaign.@if.isSet = ${props.utmCampaign}
+            href.@process.setCampaignId = ${value + '&pcampaignid=' + props.campaignId}
+            href.@process.setCampaignId.@if.isSet = ${props.campaignId}
+            target = '_blank'
+
+            class = 'appstore-badge-link google-play-badge-link'
+            title = ${Translation.translate('label', null, [], 'Component/Atom/GooglePlay', 'Erk.Neos.AppStoreBadges')}
+        }
+        content = Neos.Fusion:Tag {
+            tagName = 'img'
+            attributes {
+                alt = ${Translation.translate('label', null, [], 'Component/Atom/GooglePlay', 'Erk.Neos.AppStoreBadges')}
+                src = ${'https://play.google.com/intl/en_us/badges/static/images/badges/' + props.language + '_badge_web_generic.png'}
+                class = 'google-play-badge'
+            }
+        }
+    }
+}

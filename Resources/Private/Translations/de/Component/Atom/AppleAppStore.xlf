@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="Erk.Neos.AppStoreBadges" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="label" xml:space="preserve" approved="yes">
+                <source>Download on the App Store</source>
+                <target xml:lang="de">Laden im App Store</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
