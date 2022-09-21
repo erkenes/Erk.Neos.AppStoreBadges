@@ -14,6 +14,17 @@ prototype(Erk.Neos.AppStoreBadges:Component.Atom.AppleAppStore) < prototype(Neos
         attributes {
             href = ${props.appStoreUri}
             target = '_blank'
+
+            class = 'appstore-badge-link'
+            class.@process.addIosStore = ${value + ' apple-app-store-badge-link'}
+            class.@process.addIosStore.@if.isIos = ${props.storeType == 'ios'}
+            class.@process.addMacStore = ${value + ' apple-mac-store-badge-link'}
+            class.@process.addMacStore.@if.isMac = ${props.storeType == 'mac'}
+            class.@process.addTvStore = ${value + ' apple-tv-store-badge-link'}
+            class.@process.addTvStore.@if.isTv = ${props.storeType == 'tv'}
+
+            class.@process.addLightStyle = ${value + ' apple-store-badge-white'}
+            class.@process.addLightStyle.@if.isLight = ${props.style == 'white'}
         }
         content = Neos.Fusion:Tag {
             tagName = 'img'
@@ -28,7 +39,13 @@ prototype(Erk.Neos.AppStoreBadges:Component.Atom.AppleAppStore) < prototype(Neos
                 src.@process.addSize = ${value + '?size=250x83'}
                 alt = ${Translation.translate('label', null, [], 'Component/Atom/AppleAppStore', 'Erk.Neos.AppStoreBadges')}
 
-                data-store = ${props.storeType}
+                class = ''
+                class.@process.addIosStore = ${value + ' apple-app-store-badge'}
+                class.@process.addIosStore.@if.isIos = ${props.storeType == 'ios'}
+                class.@process.addMacStore = ${value + ' apple-mac-store-badge'}
+                class.@process.addMacStore.@if.isMac = ${props.storeType == 'mac'}
+                class.@process.addTvStore = ${value + ' apple-tv-store-badge'}
+                class.@process.addTvStore.@if.isTv = ${props.storeType == 'tv'}
             }
         }
     }
