@@ -1,7 +1,7 @@
 {
     "description": "digital badges for play and app store",
     "type": "neos-plugin",
-    "name": "eneserk/neos-appstore-badges",
+    "name": "erkenes/neos-appstore-badges",
     "license": "MIT",
     "require": {
         "php": ">=7.0",
