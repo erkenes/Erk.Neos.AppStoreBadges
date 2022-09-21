@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/erkenes/Erk.Neos.AppStoreBadges/compare/0.2.0...0.3.0) (2022-09-21)
+
+
+### Features
+
+* Add additional classes to Apple Store Badge ([b0e948f](https://github.com/erkenes/Erk.Neos.AppStoreBadges/commit/b0e948ff7fea7c3a790feadd5536eb7a2614db5a))
+
 ## [0.2.0](https://github.com/erkenes/Erk.Neos.AppStoreBadges/compare/0.1.0...0.2.0) (2022-09-21)
 
 
