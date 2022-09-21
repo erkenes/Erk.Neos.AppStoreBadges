@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/erkenes/Erk.Neos.AppStoreBadges/compare/0.0.2...0.1.0) (2022-09-21)
+
+
+### Features
+
+* Add license ([160aed9](https://github.com/erkenes/Erk.Neos.AppStoreBadges/commit/160aed9533e37d9e7d2a0cbbe3d651b6a004f30e))
+
 ## [0.0.2](https://github.com/erkenes/Erk.Neos.AppStoreBadges/compare/0.0.1...0.0.2) (2022-09-21)
 
 
