@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/erkenes/Erk.Neos.AppStoreBadges/compare/0.1.0...0.2.0) (2022-09-21)
+
+
+### Features
+
+* Revert renaming of package ([cf35969](https://github.com/erkenes/Erk.Neos.AppStoreBadges/commit/cf35969ba4b401d7f6e34c66835ec4a6729ea450))
+
 ## [0.1.0](https://github.com/erkenes/Erk.Neos.AppStoreBadges/compare/0.0.2...0.1.0) (2022-09-21)
 
 
